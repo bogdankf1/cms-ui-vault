@@ -18,9 +18,9 @@
 	<svelte:fragment slot="cell" let:row let:cell>
 		{#if cell.key === 'actions'}
 			<div class="flex items-center justify-end gap-6">
-				<Link icon={Launch} href={actions.view}>View</Link>
-				<Link icon={Edit} href={actions.edit}>Edit</Link>
-				<Link icon={TrashCan} href={actions.delete}>Delete</Link>
+				<Link icon={Launch} href={actions.view(row.id)}>View</Link>
+				<Link icon={Edit} href={actions.edit(row.id)}>Edit</Link>
+				<Link icon={TrashCan} href={actions.delete(row.id)}>Delete</Link>
 			</div>
 		{:else}
 			{cell.value}
