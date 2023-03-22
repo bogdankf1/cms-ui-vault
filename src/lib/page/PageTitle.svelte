@@ -6,7 +6,7 @@
 	export let viewAllLink = '';
 	export let editLink = '';
 	export let deleteLink = '';
-	export let onSubmit: any;
+	export let onSubmit: any = undefined;
 </script>
 
 <div class="w-full flex justify-between items-center mb-3">
