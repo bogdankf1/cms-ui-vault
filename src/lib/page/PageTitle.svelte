@@ -6,7 +6,7 @@
 	export let viewAllLink: string | undefined;
 	export let editLink: string | undefined;
 	export let deleteLink: string | undefined;
-	export let onSubmit: () => void;
+	export let onSubmit: (() => void) | undefined;
 </script>
 
 <div class="w-full flex justify-between items-center mb-3">
