@@ -8,5 +8,7 @@
 
 <div class="w-full flex justify-between items-center mb-3">
 	<h2 class="text-xl">{title}</h2>
-	<Link icon={Launch} href={viewAllLink}>View all</Link>
+	{#if viewAllLink}
+		<Link icon={Launch} href={viewAllLink}>View all</Link>
+	{/if}
 </div>
