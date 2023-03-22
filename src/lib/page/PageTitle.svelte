@@ -2,11 +2,11 @@
 	import { Button, Link } from 'carbon-components-svelte';
 	import { Launch, TrashCan, Upload } from 'carbon-icons-svelte';
 
-	export let title: string;
-	export let viewAllLink: string | undefined;
-	export let editLink: string | undefined;
-	export let deleteLink: string | undefined;
-	export let onSubmit: (() => void) | undefined;
+	export let title = '';
+	export let viewAllLink = '';
+	export let editLink = '';
+	export let deleteLink = '';
+	export let onSubmit: any;
 </script>
 
 <div class="w-full flex justify-between items-center mb-3">
